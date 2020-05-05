@@ -24,8 +24,8 @@
 		set_css(':focus{outline:0}::-moz-focus-inner{border:0;}');
 	});
 
-	add_event_listener('keydown', function(){
-		set_css('');
+	add_event_listener('keydown', function(e){
+	  if(e.keyCode === 9) set_css('');
 	});
 
 })(document);
